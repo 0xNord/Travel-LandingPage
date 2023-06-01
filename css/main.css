@@ -1,13 +1,15 @@
 @import "./reset.css";
-/* сюда импорт шрифтов с гугла через import
-если нужно   */
+
+/* font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
 
 body {
     /* цвет основного фона из макета */
     background-color: #e3dcdc;
     /* сюда дефолт шрифт с гугла
     и др. параметры из макета */
-    font-family: "";
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -17,8 +19,8 @@ body {
 .container {
     /* нужен чтобы определить ширину для контента и разместить контент по центру страницы */
 
-    max-width: 1230px; /* ширина контейнера = ширина + размер отступов * 2 */
-    padding: 0 30px; /* поля с моб.версии */
+    max-width: 1720px; /* ширина контейнера = ширина + размер отступов * 2 */
+    padding: 0 15px; /* поля с моб.версии */
     margin: 0 auto; /* выравниваем контейнер по центру */
 }
 :root {
@@ -26,3 +28,4 @@ body {
     --accent-color: #ededed; /* delete this */
 }
 /* стили для текста (text-p etc) */
+
