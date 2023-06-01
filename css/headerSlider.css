@@ -12,9 +12,7 @@
   display: none;
   height: 1079px;
 }
-.header-slider-slide img{
-  /* height: 100vh; */
-}
+
 .counter {
   position: absolute;
   top: 980px;
@@ -27,8 +25,8 @@
   transform: scale(2.0);
   cursor: pointer;
   position: absolute;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
   top: 50%;
   width: auto;
   margin-top: -22px;
