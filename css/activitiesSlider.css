@@ -1,0 +1,62 @@
+.activities-slider {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 70px;
+    
+}
+.activities-slider-slide {
+    width: fit-content;
+    position: relative;
+    height: 620px;
+    width: 351px;
+}
+.slide-info {
+    position: absolute;
+    top: 85%;
+    right: 60%;
+}
+.slide-info-h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 9px;
+}
+.slide-info-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #fff;
+    opacity: 60%;
+}
+
+  .a_prev, .a_next {
+    transform: scale(2.0);
+    cursor: pointer;
+    position: absolute;
+    margin-right: -85px;
+    margin-left: -55px;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .a_next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .a_prev:hover, .a_next:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+    transform: scale(2.5);
+  }
