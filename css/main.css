@@ -2,6 +2,7 @@
 @import "./burger.css";
 @import "./headerSlider.css";
 @import "./activitiesSlider.css";
+@import "./rating.css";
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
@@ -147,6 +148,7 @@ body {
     width: 1690px;
     height: auto;
     background-color: #fff;
+    margin-bottom: 208px;
     
 }
 .about-heading-p {
@@ -155,6 +157,8 @@ body {
     font-size: 16px;
     color: #474747;
     margin-bottom: 27px;
+    letter-spacing: 12px;
+
 }
 .about-heading-h2 {
     font-family: 'Montserrat', sans-serif;
@@ -221,4 +225,68 @@ body {
     line-height: 30px;
     color: #6d6d6d;
     padding-top: 20px;
+}
+/* beauties */
+.beauties {
+    width: 1690px;
+    height: auto;
+    background-color: #fff;
+    
+}
+.beauties-heading-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 27px;
+    letter-spacing: 12px;
+
+}
+.beauties-heading-h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #2d2d2d;
+    margin-bottom: 110px;
+}
+/* beauties cards */
+.beauties-cards {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 70px;
+    
+}
+.beauties-cards-card {
+    width: fit-content;
+    position: relative;
+    height: 620px;
+    width: 351px;
+}
+.card-info {
+    position: absolute;
+    top: 55%;
+    /* right: 10%; */
+    left: 0px;
+}
+
+.card-info-h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 9px;
+    
+}
+.card-info-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #959595;
+    padding-right: 80px;
+    margin-top: 14px;
+    /* opacity: 60%; */
+}
+.beauties-cards:nth-child(1) .beauties-cards-card div h3 {
+    margin-left: -30px; /* fix reine h3 info */
 }

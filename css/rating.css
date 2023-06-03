@@ -1,0 +1,55 @@
+.rating {
+    display: flex;
+    position: relative;
+    margin: 10px 25px;
+   
+  }
+  .rating {
+    flex-direction: row-reverse;
+    width: 200px;
+    margin-left: 145px;
+    margin-top: 5px;
+    
+  }
+  input {
+    margin: 0;
+    position: relative;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+  }
+  input::before {
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 36px;
+    left: 4px;
+    color: #c4c4c4;
+    transition: .5s;
+  }
+  input:nth-child(2n+1)::before {
+    right: 4px;
+    left: initial;
+  }
+  input:hover ~ input::before, input:hover::before,
+  input:checked ~ input::before, input:checked::before
+  {
+    color: #ff9921;
+  }
+  
+  /* DEBUG */
+  /* .container {
+    border: 1px solid black;
+  }
+  .rating {
+    border: 1px dashed red;
+  }
+  input {
+    border: 1px dotted green;
+  } */

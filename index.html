@@ -11,6 +11,10 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;900&display=swap"
         rel="stylesheet">
     <title>Document</title>
+    <!-- Подключаем FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -81,46 +85,113 @@
                 </div>
                 <div class="activities-slider-slide">
                     <img src="img/other/skiing.jpg"">
-                    <div class="slide-info">
-                        <h3 class="slide-info-h3">Skiing</h3>
-                        <p class="slide-info-p">212 activites</p>
-                    </div>
-                </div>
-                <div class="activities-slider-slide">
-                    <img src="img/other/kayaking.jpg" alt="">
-                    <div class="slide-info">
-                        <h3 class="slide-info-h3">Kayaking</h3>
-                        <p class="slide-info-p">512 activites</p>
-                    </div>
-                </div>
-                <!-- Next and previous buttons -->
-                <a class="a_prev" onclick="aplusSlides(-1)">&#10094;</a>
-                <a class="a_next" onclick="aplusSlides(1)">&#10095;</a>
-            </div>
-        </section>
-        <section class="about">
-            <p class="about-heading-p">About Us</p>
-            <h2 class="about-heading-h2">Our Philosophy</h2>
-            <div class="about-wrapper">
-                <img src="img/other/philosophy-section.jpg" alt="">
-                <div class="about-info">
-                    <div class="about-info-item">
-                        <h3 class="about-info-h3">Sustainable</h3>
-                        <p class="about-info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam, ac tristique dolor. Aliquam nulla risus,</p>
-                    </div>
-                    <div class="about-info-item">
-                        <h3 class="about-info-h3">Fair & Share</h3>
-                        <p class="about-info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam,</p>
-                    </div>
-                    <div class="about-info-item">
-                        <h3 class="about-info-h3">Experience</h3>
-                        <p class="about-info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam, ac tristique</p>
-                    </div>
+                    <div class=" slide-info">
+                    <h3 class="slide-info-h3">Skiing</h3>
+                    <p class="slide-info-p">212 activites</p>
                 </div>
             </div>
-        </section>
+            <div class="activities-slider-slide">
+                <img src="img/other/kayaking.jpg" alt="">
+                <div class="slide-info">
+                    <h3 class="slide-info-h3">Kayaking</h3>
+                    <p class="slide-info-p">512 activites</p>
+                </div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="a_prev" onclick="aplusSlides(-1)">&#10094;</a>
+            <a class="a_next" onclick="aplusSlides(1)">&#10095;</a>
     </div>
-    
+    </section>
+    <section class="about">
+        <p class="about-heading-p">About Us</p>
+        <h2 class="about-heading-h2">Our Philosophy</h2>
+        <div class="about-wrapper">
+            <img src="img/other/philosophy-section.jpg" alt="">
+            <div class="about-info">
+                <div class="about-info-item">
+                    <h3 class="about-info-h3">Sustainable</h3>
+                    <p class="about-info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl
+                        hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam, ac tristique dolor.
+                        Aliquam nulla risus,</p>
+                </div>
+                <div class="about-info-item">
+                    <h3 class="about-info-h3">Fair & Share</h3>
+                    <p class="about-info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl
+                        hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam,</p>
+                </div>
+                <div class="about-info-item">
+                    <h3 class="about-info-h3">Experience</h3>
+                    <p class="about-info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl
+                        hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam, ac tristique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="beauties">
+        <p class="beauties-heading-p">BEAUTIES</p>
+        <h2 class="beauties-heading-h2">Hotels and Appartements</h2>
+        <div class="beauties-cards">
+            <div class="beauties-cards-card">
+                <img src="img/other/hotel-reine.jpg" alt="reine hotel">
+                <div class="card-info">
+                    <h3 class="card-info-h3">Reine</h3>
+                    <p class="card-info-p">$720</p>
+                </div>
+                <div class="rating">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                </div>
+            </div>
+            <div class="beauties-cards-card">
+                <img src="img/other/hotel-norway.jpg" alt="norway hotel">
+                <div class="card-info">
+                    <h3 class="card-info-h3">Norway</h3>
+                    <p class="card-info-p">$350</p>
+                </div>
+                <div class="rating">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                </div>
+            </div>
+            <div class="beauties-cards-card">
+                <img src="img/other/hotel-bergen.jpg" alt="bergen hotel">
+                <div class="card-info">
+                    <h3 class="card-info-h3">Bergen</h3>
+                    <p class="card-info-p">$670</p>
+                </div>
+                <div class="rating">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                    <input type="radio" name="one">
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
     <footer class="footer"></footer>
     <script src="./js/main.js"></script>
     <script src="./js/headerSlider.js"></script>
