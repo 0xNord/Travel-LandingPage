@@ -11,7 +11,7 @@
     margin-top: 5px;
     
   }
-  input {
+  .rating input {
     margin: 0;
     position: relative;
     width: 20px;
@@ -24,7 +24,7 @@
     appearance: none;
     overflow: hidden;
   }
-  input::before {
+  .rating input::before {
     content: '\f005';
     position: absolute;
     font-family: fontAwesome;
@@ -33,12 +33,12 @@
     color: #c4c4c4;
     transition: .5s;
   }
-  input:nth-child(2n+1)::before {
+  .rating input:nth-child(2n+1)::before {
     right: 4px;
     left: initial;
   }
-  input:hover ~ input::before, input:hover::before,
-  input:checked ~ input::before, input:checked::before
+  .rating input:hover ~ input::before, input:hover::before,
+  .rating input:checked ~ input::before, input:checked::before
   {
     color: #ff9921;
   }

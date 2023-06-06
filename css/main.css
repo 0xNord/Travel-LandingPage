@@ -290,3 +290,46 @@ body {
 .beauties-cards:nth-child(1) .beauties-cards-card div h3 {
     margin-left: -30px; /* fix reine h3 info */
 }
+/* beauties form */
+.beauties-form {
+    border: 1px solid black;
+    position: relative;
+    margin-left: 70px;
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    
+    background-color: #f4f4f4;
+}
+.form-date, .form-location, .form-place {
+    border: 1px solid green;
+    width: 321px;
+    height: 75px;
+    display: inline-block;
+    margin-right: 146px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4e4e4e;
+}
+.form-date {
+    
+}
+.form-button {
+    display: inline-block;
+    /* align-items: flex-end; */
+    position: absolute;
+}
+.form-button button {
+    border: 1px solid red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    width: 261px;
+    height: 75px;
+    background-color: #3d3d3d;
+    padding: 27px 79px;
+}
