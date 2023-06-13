@@ -522,18 +522,20 @@ body {
 }
 
 .reviews-wrapper {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
-    
-    
+
+
 }
 
 .reviews-card {
     margin-right: 51px;
 }
+
 .reviews-card:last-child {
     margin-right: 0;
 }
+
 .reviews-item {
     width: 350px;
     height: 192px;
@@ -543,7 +545,8 @@ body {
     background-image: url("/img/other/Rating-Star-mod1.png");
     background-repeat: no-repeat;
     background-position: 165px 10px;
-    
+    margin-bottom: 26px;
+
 }
 
 .reviews-item::after {
@@ -556,8 +559,9 @@ body {
     position: absolute;
     top: 188px;
     left: 27px;
-   
+
 }
+
 .reviews-quotes {
     font-family: 'Manrope';
     font-style: 400;
@@ -573,5 +577,43 @@ body {
 
 .reviews-text {
 
-color: #474747;
+    color: #474747;
+}
+
+/* avatars */
+.reviews-avatar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar-wrapper {
+    padding: 10px;
+    margin-right: 14px;
+}
+
+
+.avatar-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.avatar-name {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.avatar-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.7;
 }
