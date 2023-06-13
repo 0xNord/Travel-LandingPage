@@ -400,3 +400,43 @@ body {
     letter-spacing: 1px;
     color: #4e4e4e;
 }
+/* partners-reviews */
+.partners-reviews {
+    width: 1690px;
+    height: auto;
+    background-color: #fff;
+    /* border: 1px solid black; */
+    margin-left: 70px;
+    padding-top: 178px;
+}
+.partners-reviews-heading-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 27px;
+    letter-spacing: 12px;
+
+}
+.partners-reviews-heading-h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #2d2d2d;
+    margin-bottom: 40px;
+}
+.partners-logo {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 188px;
+}
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    object-fit: cover;
+}
+.partners-logo img {
+
+}
