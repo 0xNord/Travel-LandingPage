@@ -617,8 +617,125 @@ body {
     line-height: 24px;
     opacity: 0.7;
 }
+
 /* footer */
 .footer {
     min-height: 484px;
     background-color: #f4f4f4;
+    border: 1px solid black;
+    padding-top: 70px;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-heading img {
+    width: 56px;
+    
+}
+.footer-logo-wrapper {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 5px;
+    border-radius: 26px;
+    display: flex;
+    background-color: #000;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+.footer-logo-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.25em;
+    color: #000000;
+    opacity: 0.9;
+}
+/* footer links */
+.footer-nav {
+    padding-top: 58px;
+    margin: 0 auto;
+    width: 120px;
+    width: fit-content;
+    /* space for all menu items */
+    margin-bottom: 67px;
+}
+
+.footer-nav ul {
+
+    list-style: none;
+    /* if someone using this code & not use reset.css */
+    margin-left: 30px;
+}
+
+.footer-nav ul li {
+    /* background-color: #1e1e1e; */
+    border-radius: 10px;
+    display: inline;
+    /* convert block to inline */
+    float: left;
+    /* for full control of how many px between */
+    margin-right: 65px;
+}
+
+.footer-nav ul li:hover {
+    background-color: #dbdbdb;
+}
+
+.footer-nav ul li a {
+    padding: 0 10px;
+    /* no space between items */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    /* Whenever you set the line-height to the full height of it's container, it centers the text */
+    line-height: 60px;
+    /* full height of container - centers by height */
+    color: #6d6d6d;
+    display: block;
+    /* 1/2 - click on link outside link's text */
+    height: 100%;
+    /* 2/2 */
+}
+
+.footer-nav ul li a:hover {
+    /* color: #1e1e1e; */
+
+}
+.footer-line {
+    width: 1110px;
+    margin-bottom: 61px;
+}
+/* copyright socials block */
+.copyright-socials {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.copy-wrapper {
+}
+.socials-wrapper {
+    border: 1px solid red;
+}
+.socials-list {
+    display: inline-flex;
+}
+.socials-item-wrapper {
+    background-color: #999;
+    border-radius: 36px;
+    padding: 10px;
+}
+.socials-list .socials-item-wrapper li {
+    display: inline-block;
+    list-style-type: none;
+}
+.socials-list .socials-item-wrapper img {
+    width: 45px;
+    height: 45px;
+    /* margin-right: 20px; */
 }
