@@ -512,7 +512,7 @@ body {
     /* border: 1px solid black; */
     margin-left: 70px;
     margin-bottom: 227px;
-    background-image: url("/img/other/reviews-bg.jpg");
+    background-image: url("img/other/reviews-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 544px;
@@ -542,7 +542,7 @@ body {
     background-color: #fff;
     padding: 78px 15px;
     position: relative;
-    background-image: url("/img/other/Rating-Star-mod1.png");
+    background-image: url("img/other/Rating-Star-mod1.png");
     background-repeat: no-repeat;
     background-position: 165px 10px;
     margin-bottom: 26px;
