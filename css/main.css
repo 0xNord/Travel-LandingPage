@@ -19,19 +19,26 @@ body {
     color: #fff;
     /* также базовые стили (цвет текста и т.д.) */
 }
+
 .container {
     min-height: 1062px;
     /* нужен чтобы определить ширину для контента и разместить контент по центру страницы */
     display: flex;
     justify-content: center;
-    max-width: 1920px; /* ширина контейнера = ширина + размер отступов * 2 */
-    padding: 0 15px; /* поля с моб.версии */
-    margin: 0 auto; /* выравниваем контейнер по центру */
+    max-width: 1920px;
+    /* ширина контейнера = ширина + размер отступов * 2 */
+    padding: 0 15px;
+    /* поля с моб.версии */
+    margin: 0 auto;
+    /* выравниваем контейнер по центру */
 }
+
 :root {
     /* color variables */
-    --accent-color: #ededed; /* delete this */
+    --accent-color: #ededed;
+    /* delete this */
 }
+
 /* стили для текста (text-p etc) */
 
 /* HEADER */
@@ -39,6 +46,7 @@ body {
     width: 100%;
     padding-bottom: 125px;
 }
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -52,6 +60,7 @@ body {
     padding-top: 48px;
     margin-right: 449px;
 }
+
 .header-logo-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -61,47 +70,63 @@ body {
     padding-left: 11px;
     letter-spacing: 5px;
 }
+
 .header-logo img {
     height: 40px;
-    
+
 }
+
 /* NAVIGATION STYLES */
 .header-nav {
     padding-top: 58px;
-    
-	width: 120px;
-	width: fit-content; /* space for all menu items */
+
+    width: 120px;
+    width: fit-content;
+    /* space for all menu items */
 }
+
 .header-nav ul {
-    
-	list-style: none; /* if someone using this code & not use reset.css */
-	margin-left: 30px;
+
+    list-style: none;
+    /* if someone using this code & not use reset.css */
+    margin-left: 30px;
 }
+
 .header-nav ul li {
     background-color: #1e1e1e;
     border-radius: 10px;
-	display: inline; /* convert block to inline */
-	float: left; /* for full control of how many px between */
-	margin-right: 65px;
+    display: inline;
+    /* convert block to inline */
+    float: left;
+    /* for full control of how many px between */
+    margin-right: 65px;
 }
+
 .header-nav ul li:hover {
     background-color: #fff;
 }
+
 .header-nav ul li a {
-	padding: 0 10px; /* no space between items */
-	font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+    /* no space between items */
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 18px;
-	/* Whenever you set the line-height to the full height of it's container, it centers the text */
-	line-height: 60px; /* full height of container - centers by height */
-	color: #fff;
-	display: block; /* 1/2 - click on link outside link's text */
-	height: 100%; /* 2/2 */
+    /* Whenever you set the line-height to the full height of it's container, it centers the text */
+    line-height: 60px;
+    /* full height of container - centers by height */
+    color: #fff;
+    display: block;
+    /* 1/2 - click on link outside link's text */
+    height: 100%;
+    /* 2/2 */
 }
+
 .header-nav ul li a:hover {
-	color: #1e1e1e;
-    
+    color: #1e1e1e;
+
 }
+
 .header-heading-p {
     position: absolute;
     padding-top: 370px;
@@ -110,6 +135,7 @@ body {
     font-size: 30px;
     letter-spacing: 19px;
 }
+
 .header-heading-h1 {
     position: absolute;
     padding-top: 500px;
@@ -117,18 +143,21 @@ body {
     font-size: 250px;
     font-weight: 700;
 }
+
 /* ACTIVITIES SECTION */
 .section-wrapper {
     margin-top: 137px;
     text-align: center;
 }
+
 .activities {
     width: 1690px;
     height: auto;
     background-color: #fff;
     margin-bottom: 197px;
-    
+
 }
+
 .activities-heading-p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -136,6 +165,7 @@ body {
     color: #474747;
     margin-bottom: 27px;
 }
+
 .activities-heading-h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -143,14 +173,16 @@ body {
     color: #2d2d2d;
     margin-bottom: 110px;
 }
+
 /* ABOUT US */
 .about {
     width: 1690px;
     height: auto;
     background-color: #fff;
     margin-bottom: 208px;
-    
+
 }
+
 .about-heading-p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -160,6 +192,7 @@ body {
     letter-spacing: 12px;
 
 }
+
 .about-heading-h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -167,20 +200,24 @@ body {
     color: #2d2d2d;
     margin-bottom: 110px;
 }
+
 .about-wrapper {
     display: flex;
     justify-content: space-evenly;
 }
+
 .about-wrapper img {
     width: 872px;
     height: 643px;
 }
+
 .about-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     row-gap: 50px;
 }
+
 .about-info-item {
     display: flex;
     flex-direction: column;
@@ -190,6 +227,7 @@ body {
     width: 440px;
     position: relative;
 }
+
 .about-info-h3 {
     align-self: flex-start;
     font-family: 'Montserrat', sans-serif;
@@ -197,6 +235,7 @@ body {
     font-size: 32px;
     color: #3d3d3d;
 }
+
 /* before */
 .about-info-h3::before {
     font-family: 'Montserrat', sans-serif;
@@ -211,12 +250,15 @@ body {
     right: 43px;
 
 }
+
 .about-info div:nth-child(2).about-info-item .about-info-h3::before {
     content: "02";
 }
+
 .about-info div:nth-child(3).about-info-item .about-info-h3::before {
     content: "03";
 }
+
 /* --before */
 .about-info-p {
     font-family: 'Montserrat', sans-serif;
@@ -226,13 +268,15 @@ body {
     color: #6d6d6d;
     padding-top: 20px;
 }
+
 /* beauties */
 .beauties {
     width: 1690px;
     height: auto;
     background-color: #fff;
-    
+
 }
+
 .beauties-heading-p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -242,6 +286,7 @@ body {
     letter-spacing: 12px;
 
 }
+
 .beauties-heading-h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -249,20 +294,23 @@ body {
     color: #2d2d2d;
     margin-bottom: 110px;
 }
+
 /* beauties cards */
 .beauties-cards {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-left: 70px;
-    
+
 }
+
 .beauties-cards-card {
     width: fit-content;
     position: relative;
     height: 620px;
     width: 351px;
 }
+
 .card-info {
     position: absolute;
     top: 55%;
@@ -276,8 +324,9 @@ body {
     font-size: 32px;
     color: #000;
     margin-bottom: 9px;
-    
+
 }
+
 .card-info-p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -287,9 +336,12 @@ body {
     margin-top: 14px;
     /* opacity: 60%; */
 }
+
 .beauties-cards:nth-child(1) .beauties-cards-card div h3 {
-    margin-left: -30px; /* fix reine h3 info */
+    margin-left: -30px;
+    /* fix reine h3 info */
 }
+
 /* beauties form */
 .beauties-form {
     /* border: 1px solid black; */
@@ -306,7 +358,10 @@ body {
     background-color: #f4f4f4;
     margin-bottom: 114px;
 }
-.form-date, .form-location, .form-place {
+
+.form-date,
+.form-location,
+.form-place {
     /* border: 1px solid green; */
     max-width: 321px;
     min-width: 200px;
@@ -320,15 +375,16 @@ body {
     color: #4e4e4e;
     position: relative;
 }
-.form-date {
-    
-}
+
+.form-date {}
+
 .form-button {
     display: inline-block;
     /* align-items: flex-end; */
     position: absolute;
     top: 20%;
 }
+
 .form-button button {
     /* border: 1px solid red; */
     font-family: 'Montserrat', sans-serif;
@@ -341,11 +397,13 @@ body {
     background-color: #3d3d3d;
     padding: 27px 79px;
 }
+
 .form_item-wrapper {
     padding: 5px;
-    
+
     /* border: 1px solid black; */
 }
+
 .form-location label {
     position: absolute;
     left: 6px;
@@ -356,6 +414,7 @@ body {
     letter-spacing: 3px;
     color: #9b9b9b;
 }
+
 .form-place label {
     position: absolute;
     left: 6px;
@@ -366,6 +425,7 @@ body {
     letter-spacing: 3px;
     color: #9b9b9b;
 }
+
 .form-date label {
     position: absolute;
     left: 6px;
@@ -376,6 +436,7 @@ body {
     letter-spacing: 3px;
     color: #9b9b9b;
 }
+
 .form_item-wrapper input {
     border: 1px solid #dbdbdb;
     padding: 10px;
@@ -387,8 +448,9 @@ body {
     font-size: 18px;
     letter-spacing: 1px;
     color: #4e4e4e;
-    
+
 }
+
 .form_item-wrapper select {
     border: 1px solid #dbdbdb;
     padding: 10px;
@@ -400,6 +462,7 @@ body {
     letter-spacing: 1px;
     color: #4e4e4e;
 }
+
 /* partners-reviews */
 .partners-reviews {
     width: 1690px;
@@ -409,6 +472,7 @@ body {
     margin-left: 70px;
     padding-top: 178px;
 }
+
 .partners-reviews-heading-p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -418,6 +482,7 @@ body {
     letter-spacing: 12px;
 
 }
+
 .partners-reviews-heading-h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -425,18 +490,88 @@ body {
     color: #2d2d2d;
     margin-bottom: 40px;
 }
+
 .partners-logo {
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 188px;
 }
+
 .logo-wrapper {
     display: flex;
     align-items: center;
     width: 100px;
     object-fit: cover;
 }
-.partners-logo img {
 
+.partners-logo img {}
+
+/* reviews */
+.reviews {
+    /* border: 1px solid black; */
+    margin-left: 70px;
+    margin-bottom: 227px;
+    background-image: url("/img/other/reviews-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 544px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.reviews-wrapper {
+    border: 1px solid red;
+    display: flex;
+    
+    
+}
+
+.reviews-card {
+    margin-right: 51px;
+}
+.reviews-card:last-child {
+    margin-right: 0;
+}
+.reviews-item {
+    width: 350px;
+    height: 192px;
+    background-color: #fff;
+    padding: 78px 15px;
+    position: relative;
+    background-image: url("/img/other/Rating-Star-mod1.png");
+    background-repeat: no-repeat;
+    background-position: 165px 10px;
+    
+}
+
+.reviews-item::after {
+    content: "";
+    border-style: solid;
+    border-width: -0 20px 20px 21px;
+    border-radius: 47px;
+    border-color: transparent transparent #fff transparent;
+    transform: rotate(178deg);
+    position: absolute;
+    top: 188px;
+    left: 27px;
+   
+}
+.reviews-quotes {
+    font-family: 'Manrope';
+    font-style: 400;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 98px;
+    opacity: 0.4;
+    color: #ff9921;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.reviews-text {
+
+color: #474747;
 }
