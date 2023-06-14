@@ -149,7 +149,9 @@ body {
     margin-top: 137px;
     text-align: center;
 }
-
+.section-wrapper section {
+    margin: 0 auto;
+}
 .activities {
     width: 1690px;
     height: auto;
