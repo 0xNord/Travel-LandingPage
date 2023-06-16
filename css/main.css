@@ -7,6 +7,10 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+* {
+    /* DEBUG CSS */
+    outline: 3px solid limegreen !important; 
+}
 body {
     /* цвет основного фона из макета */
     background-color: #fff;
@@ -148,12 +152,14 @@ body {
 .section-wrapper {
     margin-top: 137px;
     text-align: center;
+    max-width: 1690px;
+    margin: 0 auto;
 }
 .section-wrapper section {
     margin: 0 auto;
 }
 .activities {
-    width: 1690px;
+    /* width: 1690px; */
     height: auto;
     background-color: #fff;
     margin-bottom: 197px;
@@ -178,7 +184,7 @@ body {
 
 /* ABOUT US */
 .about {
-    width: 1690px;
+    /* width: 1690px; */
     height: auto;
     background-color: #fff;
     margin-bottom: 208px;
@@ -273,7 +279,7 @@ body {
 
 /* beauties */
 .beauties {
-    width: 1690px;
+    /* width: 1690px; */
     height: auto;
     background-color: #fff;
 
@@ -310,7 +316,7 @@ body {
     width: fit-content;
     position: relative;
     height: 620px;
-    width: 351px;
+    /* width: 351px; */
 }
 
 .card-info {
@@ -467,7 +473,7 @@ body {
 
 /* partners-reviews */
 .partners-reviews {
-    width: 1690px;
+    /* width: 1690px; */
     height: auto;
     background-color: #fff;
     /* border: 1px solid black; */
@@ -626,7 +632,7 @@ body {
     background-color: #f4f4f4;
     /* border: 1px solid black; */
     padding-top: 70px;
-    width: 1620px;
+    max-width: 1620px;
     margin: 0 auto;
 }
 
