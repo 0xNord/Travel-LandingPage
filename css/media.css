@@ -3,6 +3,9 @@
     .header-heading-h1 {
         color: orange;
     }
+    .header-logo {
+        margin-right: 45px;
+    }
 }
 /* vertical tablet */
 @media (max-width: 991px){

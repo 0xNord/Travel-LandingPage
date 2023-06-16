@@ -10,7 +10,7 @@
 /* Hide the images by default */
 .header-slider-slide {
   display: none;
-  height: 1079px;
+  /* height: 1079px; */
 }
 .header-slider-slide img {
   max-width: 100%;

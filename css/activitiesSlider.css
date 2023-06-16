@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-left: 70px;
+    margin-left: 106px;
+    max-width: 1479px;
     
 }
 .activities-slider-slide {
@@ -36,8 +37,8 @@
     transform: scale(2.0);
     cursor: pointer;
     position: absolute;
-    margin-right: -85px;
-    margin-left: -55px;
+    margin-right: -73px;
+    margin-left: -77px;
     top: 50%;
     width: auto;
     margin-top: -22px;
