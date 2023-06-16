@@ -6,17 +6,23 @@
     .header-logo {
         margin-right: 45px;
     }
+    
 }
 /* vertical tablet */
 @media (max-width: 991px){
     .header-heading-h1 {
         color: blue;
     }
+    
 }
 /* horizontal mobile */
 @media (max-width: 767px){
     .header-heading-h1 {
         color: green;
+    }
+    .header-nav { display: none; }
+    .burger {
+        display: flex;
     }
 }
 /* vertical mobile */

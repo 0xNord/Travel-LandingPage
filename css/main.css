@@ -34,7 +34,7 @@ body {
 /* HEADER */
 .header {
     /* transfer container */
-    min-height: 1062px;
+    /* min-height: 1062px; */
     display: flex;
     justify-content: center;
     margin: 0 auto;
