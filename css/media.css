@@ -1,5 +1,6 @@
 /* horizontal tablet */
 @media (max-width: 1920px){
+    /* HEADER */
     .header-heading-p {
         padding-top: 25%;
         
@@ -9,12 +10,20 @@
     }
     .header-logo {
         margin-right: 177px;
-    } /*
-    .header-nav ul li {
-        margin-right: 25px;
-    } */
+    }
+    /* END HEADER */
+    /* ACTIVITIES 1 */
+    /* END ACTIVITIES 1 */
+    /* ABOUT 2 */
+    /* END ABOUT 2 */
+    /* BEAUTIES 3 */
+    /* END BEAUTIES 3 */
+    /* PARTNERS-REVIEWS 4 */
+    /* END PARTNERS-REVIEWS 4 */
+    /* FOOTER */
 }
 @media (max-width: 1199px){
+    /* HEADER */
     .header-heading-h1 {
         color: orange;
     }
@@ -29,18 +38,40 @@
         margin-left: 45px;
         margin-right: 45px;
     }
+    /* END HEADER */
+    /* ACTIVITIES 1 */
+    /* END ACTIVITIES 1 */
+    /* ABOUT 2 */
+    /* END ABOUT 2 */
+    /* BEAUTIES 3 */
+    /* END BEAUTIES 3 */
+    /* PARTNERS-REVIEWS 4 */
+    /* END PARTNERS-REVIEWS 4 */
+    /* FOOTER */
 }
 /* vertical tablet */
 @media (max-width: 991px){
+    /* HEADER */
     .header-heading-h1 {
         color: blue;
     }
     .header-logo {
         margin-right: -50px;
     }
+    /* END HEADER */
+    /* ACTIVITIES 1 */
+    /* END ACTIVITIES 1 */
+    /* ABOUT 2 */
+    /* END ABOUT 2 */
+    /* BEAUTIES 3 */
+    /* END BEAUTIES 3 */
+    /* PARTNERS-REVIEWS 4 */
+    /* END PARTNERS-REVIEWS 4 */
+    /* FOOTER */
 }
 /* horizontal mobile */
 @media (max-width: 767px){
+    /* HEADER */
     .header-heading-h1 {
         color: green;
     }
@@ -54,9 +85,20 @@
         margin-left: 45px;
         margin-right: 45px;
     }
+    /* END HEADER */
+    /* ACTIVITIES 1 */
+    /* END ACTIVITIES 1 */
+    /* ABOUT 2 */
+    /* END ABOUT 2 */
+    /* BEAUTIES 3 */
+    /* END BEAUTIES 3 */
+    /* PARTNERS-REVIEWS 4 */
+    /* END PARTNERS-REVIEWS 4 */
+    /* FOOTER */
 }
 /* vertical mobile */
 @media (max-width: 575px){
+    /* HEADER */
     .header-heading-h1 {
         color: magenta;
     }
@@ -67,4 +109,14 @@
         margin-left: 21px;
         margin-right: 21px;
     }
+    /* END HEADER */
+    /* ACTIVITIES 1 */
+    /* END ACTIVITIES 1 */
+    /* ABOUT 2 */
+    /* END ABOUT 2 */
+    /* BEAUTIES 3 */
+    /* END BEAUTIES 3 */
+    /* PARTNERS-REVIEWS 4 */
+    /* END PARTNERS-REVIEWS 4 */
+    /* FOOTER */
 }

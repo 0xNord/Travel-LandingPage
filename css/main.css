@@ -154,7 +154,7 @@ body {
     margin: 0 auto;
 }
 .section-wrapper section {
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .activities {
     /* width: 1690px; */
@@ -214,7 +214,9 @@ body {
 
 .about-wrapper img {
     width: 872px;
-    height: 643px;
+    /* height: 643px; */
+    height: 92%;
+    margin-right: 65px;
 }
 
 .about-info {
