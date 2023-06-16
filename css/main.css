@@ -125,20 +125,24 @@ body {
 
 .header-heading-p {
     position: absolute;
-    padding-top: 370px;
+    /* padding-top: 462px; */
+    padding-top: 35vh;
     
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: clamp(0.8rem, 0.287rem + 1.4275vw, 2rem);
     letter-spacing: 19px;
 }
 
 .header-heading-h1 {
     position: absolute;
-    padding-top: 500px;
+    /* padding-top: 570px; */
+    padding-top: 42vh;
    
     font-family: 'Montserrat', sans-serif;
-    font-size: 250px;
+    /* font-size: 250px;*/
+    font-size: clamp(5rem, 0.2974rem + 13.0855vw, 16rem); 
     font-weight: 700;
 }
 

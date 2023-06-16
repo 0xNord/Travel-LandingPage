@@ -1,4 +1,13 @@
 /* horizontal tablet */
+@media (max-width: 1920px){
+    .header-heading-p {
+        padding-top: 25%;
+        
+    }
+    .header-heading-h1 {
+        padding-top: 30%;
+    }
+}
 @media (max-width: 1199px){
     .header-heading-h1 {
         color: orange;

@@ -25,6 +25,7 @@
 }
 /* Next & previous buttons */
 .prev, .next {
+  z-index: 1;
   transform: scale(2.0);
   cursor: pointer;
   position: absolute;
