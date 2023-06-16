@@ -15,6 +15,26 @@
     /* ACTIVITIES 1 */
     /* END ACTIVITIES 1 */
     /* ABOUT 2 */
+    .about {
+        margin-bottom: 90px;
+    }
+    .about-wrapper {
+        flex-direction: row;
+        row-gap: 30px;
+        /* align-items: center; */
+    }
+    .about-wrapper img {
+        object-fit: cover;
+        /* height: 230px; */
+        width: 632px;
+        /* margin-right: 0; */
+    }
+    .about-info {
+        flex-direction: column;
+    }
+    .about-info-item {
+        margin-bottom: 0;
+    }
     /* END ABOUT 2 */
     /* BEAUTIES 3 */
     /* END BEAUTIES 3 */
@@ -42,6 +62,26 @@
     /* ACTIVITIES 1 */
     /* END ACTIVITIES 1 */
     /* ABOUT 2 */
+    .about {
+        margin-bottom: 80px;
+    }
+    .about-wrapper {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .about-wrapper img {
+        object-fit: cover;
+        height: 230px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .about-info {
+        flex-direction: column;
+    }
+    .about-info-item {
+        margin-bottom: 0;
+    }
     /* END ABOUT 2 */
     /* BEAUTIES 3 */
     /* END BEAUTIES 3 */
@@ -62,6 +102,26 @@
     /* ACTIVITIES 1 */
     /* END ACTIVITIES 1 */
     /* ABOUT 2 */
+    .about {
+        margin-bottom: 80px;
+    }
+    .about-wrapper {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .about-wrapper img {
+        object-fit: cover;
+        height: 230px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .about-info {
+        flex-direction: column;
+    }
+    .about-info-item {
+        margin-bottom: 0;
+    }
     /* END ABOUT 2 */
     /* BEAUTIES 3 */
     /* END BEAUTIES 3 */
@@ -89,6 +149,26 @@
     /* ACTIVITIES 1 */
     /* END ACTIVITIES 1 */
     /* ABOUT 2 */
+    .about {
+        margin-bottom: 80px;
+    }
+    .about-wrapper {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .about-wrapper img {
+        object-fit: cover;
+        height: 230px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .about-info {
+        flex-direction: column;
+    }
+    .about-info-item {
+        margin-bottom: 0;
+    }
     /* END ABOUT 2 */
     /* BEAUTIES 3 */
     /* END BEAUTIES 3 */
@@ -119,4 +199,33 @@
     /* PARTNERS-REVIEWS 4 */
     /* END PARTNERS-REVIEWS 4 */
     /* FOOTER */
+}
+@media (max-width: 490px){
+    /* ABOUT 2 */
+    .about {
+        margin-bottom: 80px;
+    }
+    .about-wrapper {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .about-wrapper img {
+        object-fit: cover;
+        height: 230px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .about-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-info-item {
+        margin-bottom: 0;
+       width: 92%;
+    }
+    .about-info-p {
+        line-height: 20px;
+    }
+    /* END ABOUT 2 */
 }
