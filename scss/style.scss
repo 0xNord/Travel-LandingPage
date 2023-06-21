@@ -1,15 +1,17 @@
-@import "./reset.css";
-@import "./burger.css";
-@import "./headerSlider.css";
-@import "./activitiesSlider.css";
-@import "./rating.css";
+@import "base/reset";
+@import "base/normalize";
+@import "blocks/burger";
+@import "sliders/headerSlider";
+@import "sliders/activitiesSlider";
+@import "blocks/rating";
+
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 * {
     /* DEBUG CSS */
-    outline: 3px solid limegreen !important; 
+    outline: 1px solid limegreen !important; 
 }
 body {
     /* цвет основного фона из макета */
@@ -26,7 +28,6 @@ body {
 :root {
     /* color variables */
     --accent-color: #ededed;
-    /* delete this */
 }
 
 /* стили для текста (text-p etc) */
