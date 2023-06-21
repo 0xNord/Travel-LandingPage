@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,17 +20,20 @@
 
 <body>
     <header class="header">
-            <div class="header-wrapper">
-                <div class="header-logo">
-                    <img src="./img/logo/logo-header.png" alt="company logo">
-                    <p class="header-logo-name">TRAVELx</p>
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="header__logo-img" href="#">
+                        <img src="./img/logo/logo-header.png" alt="company logo">
+                    </a>
+                    <span class="header-logo-name">TRAVELx</span>
                 </div>
-                <nav class="header-nav">
-                    <ul>
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Activities</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">Destinations</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Activities</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,26 +42,27 @@
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
             </button>
-            <div class="header-slider">
-                <div class="header-slider-slide fade">
-                    <img src="./img/other/image.png" alt="">
-                </div>
-                <div class="header-slider-slide fade">
-                    <img src="./img/other/image2.jpg" alt="">
-                </div>
-                <div class="header-slider-slide fade">
-                    <img src="./img/other/image3.jpg" alt="">
-                </div>
-                <div class="header-slider-slide fade">
-                    <img src="./img/other/image4.jpg" alt="">
-                </div>
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="header-slidrer">
+            <div class="header-slider-slide fade">
+                <img src="./img/other/imrage.png" alt="">
             </div>
-            <p class="header-heading-p">EXPLORE</p>
-            <h1 class="header-heading-h1">Norway</h1>
-        
+            <div class="header-slider-slide fade">
+                <img src="./img/other/image2.jpg" alt="">
+            </div>
+            <div class="header-slider-slide fade">
+                <img src="./img/other/image3.jpg" alt="">
+            </div>
+            <div class="header-slider-slide fade">
+                <img src="./img/other/image4.jpg" alt="">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <p class="header-headring-p">EXPLORE</p>
+        <h1 class="header-herading-h1">Norway</h1>
+
         </div>
     </header>
     <div class="section-wrapper">
