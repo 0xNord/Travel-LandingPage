@@ -417,7 +417,7 @@ template {
 .header-heading-p {
   position: absolute;
   left: 810px;
-  top: 400px;
+  top: 480px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   /* font-size: 30px; */
@@ -427,8 +427,8 @@ template {
 
 .header-heading-h1 {
   position: absolute;
-  left: 315px;
-  top: 330px;
+  left: 425px;
+  top: 400px;
   font-family: "Montserrat", sans-serif;
   /* font-size: 250px;*/
   font-size: clamp(5rem, 0.2974rem + 13.0855vw, 16rem);
@@ -447,7 +447,7 @@ template {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 3%;
+  top: 65%;
   right: 3%;
   z-index: 2;
 }
@@ -1373,11 +1373,49 @@ body {
 
 @media (max-width: 1920px) {
   .header-heading-p {
-    left: 50%;
-    top: 39%;
+    left: 42%;
+    top: 40%;
   }
   .header-heading-h1 {
-    left: 20%;
-    top: 32%;
+    left: 22%;
+    top: 34%;
+  }
+}
+@media (max-width: 1140px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .header__top {
+    padding-top: 3%;
+  }
+}
+@media (max-width: 599px) {
+  .header-heading-p {
+    left: 12vw;
+    top: 37%;
+  }
+  .header-heading-h1 {
+    left: 10vw;
+    top: 34%;
+  }
+}
+@media (max-width: 434px) {
+  .header-heading-p {
+    left: 19vw;
+    top: 46%;
+  }
+  .header-heading-h1 {
+    left: 6vw;
+    top: 48%;
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 354px) {
+  .header-heading-h1 {
+    left: -3vw;
+    transform: scale(0.5);
   }
 }/*# sourceMappingURL=style.css.map */
