@@ -346,7 +346,9 @@ template {
 /* HEADER */
 .header {
   padding-bottom: 125px;
-  box-sizing: content-box;
+}
+.header .container {
+  padding: 0;
 }
 
 .header__inner {
@@ -414,8 +416,8 @@ template {
 
 .header-heading-p {
   position: absolute;
-  /* padding-top: 462px; */
-  padding-top: 38vh;
+  left: 810px;
+  top: 400px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   /* font-size: 30px; */
@@ -425,9 +427,8 @@ template {
 
 .header-heading-h1 {
   position: absolute;
-  left: 700px;
-  /* padding-top: 570px; */
-  padding-top: 35vh;
+  left: 315px;
+  top: 330px;
   font-family: "Montserrat", sans-serif;
   /* font-size: 250px;*/
   font-size: clamp(5rem, 0.2974rem + 13.0855vw, 16rem);
@@ -494,8 +495,6 @@ template {
   transform: scale(2);
   cursor: pointer;
   position: absolute;
-  margin-right: 100px;
-  margin-left: 100px;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -510,9 +509,13 @@ template {
           user-select: none;
 }
 
+.prev {
+  left: 2%;
+}
+
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 2%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -1366,4 +1369,15 @@ body {
   width: 45px;
   height: 45px;
   /* margin-right: 20px; */
+}
+
+@media (max-width: 1920px) {
+  .header-heading-p {
+    left: 50%;
+    top: 39%;
+  }
+  .header-heading-h1 {
+    left: 20%;
+    top: 32%;
+  }
 }/*# sourceMappingURL=style.css.map */

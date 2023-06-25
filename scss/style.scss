@@ -671,3 +671,15 @@ body {
     height: 45px;
     /* margin-right: 20px; */
 }
+
+// MEDIA QUERIES
+@media (max-width: 1920px){
+    .header-heading-p {
+        left: 50%;
+        top: 39%;
+    }
+    .header-heading-h1 {
+        left: 20%;
+        top: 32%;
+    }
+}
