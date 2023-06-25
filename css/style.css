@@ -701,6 +701,30 @@ template {
 input {
   border: 1px dotted green;
 } */
+.debugMode-btn {
+  position: fixed;
+  outline: 1px dashed black;
+  z-index: 1;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  top: 90vh;
+  left: 50px;
+  padding: 15px 10px;
+  background-color: #ededed;
+}
+.debugMode-btn:hover {
+  cursor: pointer;
+}
+
+.debugMode {
+  outline: 1px solid limegreen;
+}
+
+.on {
+  color: red;
+}
+
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
