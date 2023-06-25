@@ -1,17 +1,33 @@
 /* HEADER */
 .header {
     padding-bottom: 125px;
+    box-sizing: content-box;
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
-.header__logo-name {
+.header__top {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 58px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+.header-logo-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: #fff;
+    line-height: auto;
     letter-spacing: 5px;
 }
 .header__logo-img {
@@ -21,12 +37,19 @@
 /* NAVIGATION STYLES */
 .menu__list {
     display: flex;
+    column-gap: 65px;
 }
 .menu__item {
     border-radius: 10px;
+    outline: 1px solid #f7f7f7;
+    padding: 25px 20px;
 }
-.menu__item + .menu__item {
-    padding-left: 65px;
+.menu__item:hover {
+    outline: 1px solid #ededed;
+    filter: drop-shadow(2px 4px 6px black);
+    & a {
+        color: #fff;
+    }
 }
 .menu__link {
     padding: 0 10px;
@@ -34,7 +57,6 @@
     font-size: 18px;
     color: #fff;
 }
-
 .header-heading-p {
     position: absolute;
     /* padding-top: 462px; */
@@ -49,8 +71,9 @@
 
 .header-heading-h1 {
     position: absolute;
+    left: 700px;
     /* padding-top: 570px; */
-    padding-top: 46vh;
+    padding-top: 35vh;
    
     font-family: 'Montserrat', sans-serif;
     /* font-size: 250px;*/

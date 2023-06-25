@@ -346,18 +346,37 @@ template {
 /* HEADER */
 .header {
   padding-bottom: 125px;
+  box-sizing: content-box;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
-.header__logo-name {
+.header__top {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 58px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+
+.header-logo-name {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 18px;
   color: #fff;
+  line-height: auto;
   letter-spacing: 5px;
 }
 
@@ -368,14 +387,22 @@ template {
 /* NAVIGATION STYLES */
 .menu__list {
   display: flex;
+  -moz-column-gap: 65px;
+       column-gap: 65px;
 }
 
 .menu__item {
   border-radius: 10px;
+  outline: 1px solid #f7f7f7;
+  padding: 25px 20px;
 }
 
-.menu__item + .menu__item {
-  padding-left: 65px;
+.menu__item:hover {
+  outline: 1px solid #ededed;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.menu__item:hover a {
+  color: #fff;
 }
 
 .menu__link {
@@ -398,8 +425,9 @@ template {
 
 .header-heading-h1 {
   position: absolute;
+  left: 700px;
   /* padding-top: 570px; */
-  padding-top: 46vh;
+  padding-top: 35vh;
   font-family: "Montserrat", sans-serif;
   /* font-size: 250px;*/
   font-size: clamp(5rem, 0.2974rem + 13.0855vw, 16rem);
@@ -678,12 +706,11 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 * {
   /* DEBUG CSS */
-  outline: 1px solid limegreen !important;
 }
 
 body {
   /* цвет основного фона из макета */
-  background-color: #fff;
+  background-color: #ededed;
   /* сюда дефолт шрифт с гугла
   и др. параметры из макета */
   font-family: "Montserrat", sans-serif;
@@ -698,7 +725,6 @@ body {
   max-width: 1920px;
   padding: 0 130px;
   margin: 0 auto;
-  background-color: aqua;
 }
 
 :root {

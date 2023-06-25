@@ -15,11 +15,11 @@ font-family: 'Roboto', sans-serif; */
 
 * {
     /* DEBUG CSS */
-    outline: 1px solid limegreen !important; 
+    // outline: 1px solid limegreen !important; 
 }
 body {
     /* цвет основного фона из макета */
-    background-color: #fff;
+    background-color: #ededed;
     /* сюда дефолт шрифт с гугла
     и др. параметры из макета */
     font-family: 'Montserrat', sans-serif;
@@ -33,7 +33,7 @@ body {
     max-width: 1920px;
     padding: 0 130px;
     margin: 0 auto;
-    background-color: aqua;
+    // background-color: aqua;
 }
 :root {
     /* color variables */
