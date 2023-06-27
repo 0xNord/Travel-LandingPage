@@ -802,6 +802,7 @@ body {
   height: auto;
   background-color: #fff;
   margin-bottom: 208px;
+  padding-top: 15px;
 }
 
 .about-heading-p {
@@ -1385,6 +1386,39 @@ body {
     top: 34%;
   }
 }
+@media (max-width: 1440px) {
+  .about {
+    margin-bottom: 50px;
+  }
+  .about-heading-p {
+    margin-bottom: 20px;
+  }
+  .about-heading-h2 {
+    margin-bottom: 40px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-wrapper img {
+    height: 450px;
+  }
+  .about-info {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  .about-info-item {
+    margin-bottom: 0;
+  }
+  .about-wrapper img {
+    width: 80vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
 @media (max-width: 1260px) {
   .beauties-cards {
     flex-direction: column;
@@ -1470,6 +1504,9 @@ body {
   }
 }
 @media (max-width: 799px) {
+  .about-wrapper img {
+    height: 285px;
+  }
   .partners-logo {
     grid-template-columns: repeat(1, 100px);
     margin-bottom: 10px;
@@ -1480,6 +1517,15 @@ body {
   }
 }
 @media (max-width: 660px) {
+  .about-info {
+    row-gap: 20px;
+  }
+  .about-info-h3 {
+    align-self: center;
+  }
+  .about-info-h3::before {
+    left: 0;
+  }
   .beauties {
     padding-top: 10px;
   }
@@ -1534,6 +1580,16 @@ body {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 540px) {
+  .about-info-h3::before {
+    left: 75px;
+  }
+  .about-info-p {
+    font-size: 15px;
+    width: 250px;
+    align-self: center;
+  }
+}
 @media (max-width: 448px) {
   .beauties-cards-card {
     height: 270px;
@@ -1561,6 +1617,9 @@ body {
     top: 48%;
     transform: scale(0.8);
   }
+  .about-heading-h2 {
+    font-size: 37px;
+  }
   .card-info {
     left: -2%;
     top: 0%;
@@ -1579,6 +1638,13 @@ body {
   .header-heading-h1 {
     left: -3vw;
     transform: scale(0.5);
+  }
+  .about-heading-h2 {
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
+  .about-info-h3::before {
+    left: 81px;
   }
   .partners-logo {
     margin-bottom: 40px;
