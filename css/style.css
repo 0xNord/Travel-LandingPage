@@ -893,6 +893,7 @@ body {
 /* beauties */
 .beauties {
   /* width: 1690px; */
+  margin: 0 auto;
   height: auto;
   background-color: #fff;
 }
@@ -917,9 +918,8 @@ body {
 /* beauties cards */
 .beauties-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
-  margin-left: 70px;
 }
 
 .beauties-cards-card {
@@ -928,6 +928,11 @@ body {
   position: relative;
   height: 620px;
   /* width: 351px; */
+}
+
+.fixReine {
+  margin-left: -30px;
+  /* fix reine h3 info */
 }
 
 .card-info {
@@ -953,11 +958,6 @@ body {
   padding-right: 80px;
   margin-top: 14px;
   /* opacity: 60%; */
-}
-
-.beauties-cards:nth-child(1) .beauties-cards-card div h3 {
-  margin-left: -30px;
-  /* fix reine h3 info */
 }
 
 /* beauties form */
@@ -1386,6 +1386,19 @@ body {
   }
 }
 @media (max-width: 1260px) {
+  .beauties-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .beauties-cards-card {
+    height: 380px;
+  }
+  .card-info {
+    top: 10%;
+    left: 20px;
+    background-color: #fff;
+    padding: 15px 5px;
+  }
   .beauties-form {
     justify-content: start;
     padding-left: 5px;
@@ -1467,6 +1480,16 @@ body {
   }
 }
 @media (max-width: 660px) {
+  .beauties {
+    padding-top: 10px;
+  }
+  .beauties-heading-p {
+    margin-bottom: 20px;
+  }
+  .beauties-heading-h2 {
+    font-size: 31px;
+    margin-bottom: 31px;
+  }
   .footer {
     padding-top: 35px;
   }
@@ -1498,11 +1521,29 @@ body {
     left: 10vw;
     top: 34%;
   }
+  .beauties-cards-card {
+    height: 340px;
+  }
+  .beauties-cards-card img {
+    width: 76vw;
+  }
+  .card-info {
+    transform: scale(0.8);
+  }
   .reviews {
     margin-bottom: 25px;
   }
 }
 @media (max-width: 448px) {
+  .beauties-cards-card {
+    height: 270px;
+  }
+  .beauties-heading-p {
+    margin-bottom: 14px;
+  }
+  .beauties-heading-h2 {
+    font-size: 24px;
+  }
   .reviews-wrapper {
     gap: 15px;
   }
@@ -1520,6 +1561,13 @@ body {
     top: 48%;
     transform: scale(0.8);
   }
+  .card-info {
+    left: -2%;
+    top: 0%;
+  }
+  .rating {
+    margin-left: 0;
+  }
   .partners-reviews-heading-h2 {
     font-size: 34px;
   }
@@ -1534,6 +1582,16 @@ body {
   }
   .partners-logo {
     margin-bottom: 40px;
+  }
+  .beauties-cards-card {
+    height: 225px;
+  }
+  .beauties-heading-p {
+    margin-bottom: 9px;
+  }
+  .beauties-heading-h2 {
+    font-size: 22px;
+    margin-bottom: 17px;
   }
   .reviews {
     margin-bottom: 0;
