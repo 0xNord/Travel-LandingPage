@@ -5,7 +5,6 @@
 
 @import "blocks/burger";
 @import "sliders/headerSlider";
-@import "sliders/activitiesSlider";
 @import "blocks/rating";
 @import "blocks/debugBtn";
 
@@ -61,10 +60,14 @@ body {
 
 .activities {
     /* width: 1690px; */
+    padding-top: 15px;
     height: auto;
     background-color: #fff;
     margin-bottom: 197px;
     padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .activities-heading-p {
@@ -82,6 +85,74 @@ body {
     color: #2d2d2d;
     margin-bottom: 110px;
 }
+
+.activities-card {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(163px, 280px));
+    grid-template-rows: repeat(2, 600px);
+    grid-template-areas:
+        "a a b b"
+        "c c d d";
+    gap: 25px;
+
+    & .hiking {
+        grid-area: a;
+    }
+
+    & .sailing {
+        grid-area: b;
+    }
+
+    & .skiing {
+        grid-area: c;
+    }
+
+    & .kayaking {
+        grid-area: d;
+    }
+}
+
+.activities-card-inner {
+    width: auto;
+    position: relative;
+
+    & img {
+        width: 100%;
+        height: -webkit-fill-available;
+        object-fit: cover;
+
+    }
+
+    & .card-info {
+        top: 10%;
+        left: 20px;
+        background-color: #fff;
+        padding: 15px 5px;
+        position: absolute;
+        top: 85%;
+        right: 60%;
+        left: 15px;
+    }
+
+    & .card-info-h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: #000;
+        margin-bottom: 9px;
+    }
+
+    & .card-info-p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        color: #000;
+        opacity: 60%;
+        padding-right: 0;
+    }
+}
+
+
 
 /* ABOUT US */
 .about {
@@ -223,10 +294,12 @@ body {
     /* width: 351px; */
 
 }
+
 .fixReine {
-        margin-left: -30px;
-        /* fix reine h3 info */
-    }
+    margin-left: -30px;
+    /* fix reine h3 info */
+}
+
 .card-info {
     position: absolute;
     top: 55%;
@@ -697,42 +770,77 @@ body {
         top: 34%;
     }
 }
+
 @media (max-width: 1440px) {
+    .header {
+        padding-bottom: 90px;
+    }
+    // activities
+    .activities {
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+        &-heading-h2 { margin-bottom: 50px; }
+    }
     // philosophy
     .about {
         margin-bottom: 50px;
-        &-heading-p { margin-bottom: 20px; }
-        &-heading-h2 { margin-bottom: 40px; }
+
+        &-heading-p {
+            margin-bottom: 20px;
+        }
+
+        &-heading-h2 {
+            margin-bottom: 40px;
+        }
     }
+
     .about-wrapper {
         flex-direction: column;
         align-items: center;
-        & img { height: 450px; }
+
+        & img {
+            height: 450px;
+        }
     }
+
     .about-info {
         flex-direction: column;
         align-items: center;
         padding-bottom: 15px;
-        &-item { margin-bottom: 0; }
+
+        &-item {
+            margin-bottom: 0;
+        }
     }
-    .about-wrapper img { width: 80vw; object-fit: cover;margin-right: 0;margin-bottom: 25px;}
+
+    .about-wrapper img {
+        width: 80vw;
+        object-fit: cover;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
 }
+
 @media (max-width: 1260px) {
-    
+    // activities
+    .activities-card { margin: 0 15px; }
     // hotels
     .beauties-cards {
         flex-direction: column;
         align-items: center;
+
         &-card {
             height: 380px;
         }
     }
+
     .card-info {
         top: 10%;
         left: 20px;
         background-color: #fff;
         padding: 15px 5px;
     }
+
     //form
     .beauties-form {
         justify-content: start;
@@ -779,12 +887,15 @@ body {
     .burger {
         display: block;
     }
-
+    .header {
+        padding-bottom: 50px;
+    }
     .header__top {
         padding-top: 3%;
     }
+
     // hotels
-    
+
     // form
     .beauties-form {
         padding: 30px 0;
@@ -826,8 +937,34 @@ body {
 }
 
 @media (max-width: 799px) {
+    .header {
+        padding-bottom: 30px;
+    }
+    // activities
+    .activities-card {
+        display: grid;
+        margin: 0 15px;
+        grid-template-columns: repeat(2, minmax(130px, 220px));
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas:
+            "a a"
+            "b b"
+            "c c"
+            "d d";
+        gap: 25px;
+
+        &-inner {
+            & .card-info {
+                top: 68%;
+            }
+        }
+    }
+
     // philosophy
-    .about-wrapper img { height: 285px; }
+    .about-wrapper img {
+        height: 285px;
+    }
+
     .partners-logo {
         grid-template-columns: repeat(1, 100px);
         margin-bottom: 10px;
@@ -840,18 +977,34 @@ body {
 }
 
 @media (max-width: 660px) {
+
     // philosophy
     .about-info {
         row-gap: 20px;
+
         &-h3 {
             align-self: center;
-            &::before { left: 0; }
+
+            &::before {
+                left: 0;
+            }
         }
     }
+
     //hotels
-    .beauties { padding-top: 10px; }
-    .beauties-heading-p { margin-bottom: 20px; }
-    .beauties-heading-h2 { font-size: 31px; margin-bottom: 31px;}
+    .beauties {
+        padding-top: 10px;
+    }
+
+    .beauties-heading-p {
+        margin-bottom: 20px;
+    }
+
+    .beauties-heading-h2 {
+        font-size: 31px;
+        margin-bottom: 31px;
+    }
+
     .footer {
         padding-top: 35px;
     }
@@ -892,33 +1045,68 @@ body {
         left: 10vw;
         top: 34%;
     }
+    //activities
+    .activities {
+        &-heading-h2 { font-size: 39px; }
+    }
     //hotels
     .beauties-cards-card {
         height: 340px;
     }
+
     .beauties-cards-card img {
         width: 76vw;
     }
-    .card-info { transform: scale(.8); }
+
+    .card-info {
+        transform: scale(.8);
+    }
+
     //reviews
     .reviews {
         margin-bottom: 25px;
     }
 }
-@media (max-width: 540px){
+
+@media (max-width: 540px) {
+    .header {
+        padding-bottom: 10px;
+    }
+    //activities
+    .activities {
+        &-heading-p { margin-bottom: 15px; }
+        &-heading-h2 { font-size: 32px; margin-bottom: 30px;}
+    }
     .about-info {
-        &-h3::before { left: 75px; }
-        &-p { font-size: 15px; width: 250px; align-self: center;}
+        &-h3::before {
+            left: 75px;
+        }
+
+        &-p {
+            font-size: 15px;
+            width: 250px;
+            align-self: center;
+        }
+
         // align-items: center;
     }
 }
+
 @media (max-width: 448px) {
+
     // hotels
     .beauties-cards-card {
         height: 270px;
     }
-    .beauties-heading-p { margin-bottom: 14px; }
-    .beauties-heading-h2 { font-size: 24px; }
+
+    .beauties-heading-p {
+        margin-bottom: 14px;
+    }
+
+    .beauties-heading-h2 {
+        font-size: 24px;
+    }
+
     .reviews-wrapper {
         gap: 15px;
 
@@ -931,6 +1119,7 @@ body {
 }
 
 @media (max-width: 434px) {
+
     .header-heading-p {
         left: 19vw;
         top: 46%;
@@ -941,11 +1130,34 @@ body {
         top: 48%;
         transform: scale(.8);
     }
+
+    // activities
+    //activities
+    .activities {
+        &-heading-p { margin-bottom: 10px; }
+        &-heading-h2 { font-size: 25px; margin-bottom: 15px;}
+    }
+    .activities-card-inner {
+        & .card-info {
+            &-h3 { font-size: 25px; }
+            &-p { font-size: 14px; }
+        }
+    }
     // philosophy
-    .about-heading-h2 { font-size: 37px; }
+    .about-heading-h2 {
+        font-size: 37px;
+    }
+
     //hotels
-    .card-info { left: -2%; top: 0%;}
-    .rating { margin-left: 0; }
+    .card-info {
+        left: -2%;
+        top: 0%;
+    }
+
+    .rating {
+        margin-left: 0;
+    }
+
     // section 4 - partners-reviews
     .partners-reviews-heading-h2 {
         font-size: 34px;
@@ -957,29 +1169,44 @@ body {
 }
 
 @media (max-width: 354px) {
+    .header {
+        padding-bottom: 5px;
+    }
     .header-heading-h1 {
         left: -3vw;
         transform: scale(.5);
     }
+
     // philosophy 
-    .about-heading-h2 { font-size: 33px; margin-bottom: 25px;}
-    .about-info {
-        &-h3::before { left: 81px; }
+    .about-heading-h2 {
+        font-size: 33px;
+        margin-bottom: 25px;
     }
+
+    .about-info {
+        &-h3::before {
+            left: 81px;
+        }
+    }
+
     .partners-logo {
         margin-bottom: 40px;
     }
+
     // hotels
     .beauties-cards-card {
         height: 225px;
     }
+
     .beauties-heading-p {
         margin-bottom: 9px;
     }
+
     .beauties-heading-h2 {
         font-size: 22px;
         margin-bottom: 17px;
     }
+
     .reviews {
         margin-bottom: 0;
     }

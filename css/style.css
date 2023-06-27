@@ -575,77 +575,6 @@ template {
     opacity: 1;
   }
 }
-.activities-slider {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-left: 106px;
-  max-width: 1479px;
-}
-
-.activities-slider-slide {
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  height: 620px;
-  width: 351px;
-}
-
-.slide-info {
-  position: absolute;
-  top: 85%;
-  right: 60%;
-  left: 15px;
-}
-
-.slide-info-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  color: #fff;
-  margin-bottom: 9px;
-}
-
-.slide-info-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  color: #fff;
-  opacity: 60%;
-}
-
-.a_prev, .a_next {
-  transform: scale(2);
-  cursor: pointer;
-  position: absolute;
-  margin-right: -73px;
-  margin-left: -77px;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.2s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
-/* Position the "next button" to the right */
-.a_next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.a_prev:hover, .a_next:hover {
-  /* background-color: rgba(0,0,0,0.8); */
-  transform: scale(2.5);
-}
-
 .rating {
   display: flex;
   position: relative;
@@ -774,10 +703,14 @@ body {
 
 .activities {
   /* width: 1690px; */
+  padding-top: 15px;
   height: auto;
   background-color: #fff;
   margin-bottom: 197px;
   padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .activities-heading-p {
@@ -794,6 +727,62 @@ body {
   font-size: 46px;
   color: #2d2d2d;
   margin-bottom: 110px;
+}
+
+.activities-card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(163px, 280px));
+  grid-template-rows: repeat(2, 600px);
+  grid-template-areas: "a a b b" "c c d d";
+  gap: 25px;
+}
+.activities-card .hiking {
+  grid-area: a;
+}
+.activities-card .sailing {
+  grid-area: b;
+}
+.activities-card .skiing {
+  grid-area: c;
+}
+.activities-card .kayaking {
+  grid-area: d;
+}
+
+.activities-card-inner {
+  width: auto;
+  position: relative;
+}
+.activities-card-inner img {
+  width: 100%;
+  height: -webkit-fill-available;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.activities-card-inner .card-info {
+  top: 10%;
+  left: 20px;
+  background-color: #fff;
+  padding: 15px 5px;
+  position: absolute;
+  top: 85%;
+  right: 60%;
+  left: 15px;
+}
+.activities-card-inner .card-info-h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 9px;
+}
+.activities-card-inner .card-info-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000;
+  opacity: 60%;
+  padding-right: 0;
 }
 
 /* ABOUT US */
@@ -1387,6 +1376,16 @@ body {
   }
 }
 @media (max-width: 1440px) {
+  .header {
+    padding-bottom: 90px;
+  }
+  .activities {
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+  }
+  .activities-heading-h2 {
+    margin-bottom: 50px;
+  }
   .about {
     margin-bottom: 50px;
   }
@@ -1420,6 +1419,9 @@ body {
   }
 }
 @media (max-width: 1260px) {
+  .activities-card {
+    margin: 0 15px;
+  }
   .beauties-cards {
     flex-direction: column;
     align-items: center;
@@ -1470,6 +1472,9 @@ body {
   .burger {
     display: block;
   }
+  .header {
+    padding-bottom: 50px;
+  }
   .header__top {
     padding-top: 3%;
   }
@@ -1504,6 +1509,20 @@ body {
   }
 }
 @media (max-width: 799px) {
+  .header {
+    padding-bottom: 30px;
+  }
+  .activities-card {
+    display: grid;
+    margin: 0 15px;
+    grid-template-columns: repeat(2, minmax(130px, 220px));
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas: "a a" "b b" "c c" "d d";
+    gap: 25px;
+  }
+  .activities-card-inner .card-info {
+    top: 68%;
+  }
   .about-wrapper img {
     height: 285px;
   }
@@ -1567,6 +1586,9 @@ body {
     left: 10vw;
     top: 34%;
   }
+  .activities-heading-h2 {
+    font-size: 39px;
+  }
   .beauties-cards-card {
     height: 340px;
   }
@@ -1581,6 +1603,16 @@ body {
   }
 }
 @media (max-width: 540px) {
+  .header {
+    padding-bottom: 10px;
+  }
+  .activities-heading-p {
+    margin-bottom: 15px;
+  }
+  .activities-heading-h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
   .about-info-h3::before {
     left: 75px;
   }
@@ -1617,6 +1649,19 @@ body {
     top: 48%;
     transform: scale(0.8);
   }
+  .activities-heading-p {
+    margin-bottom: 10px;
+  }
+  .activities-heading-h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .activities-card-inner .card-info-h3 {
+    font-size: 25px;
+  }
+  .activities-card-inner .card-info-p {
+    font-size: 14px;
+  }
   .about-heading-h2 {
     font-size: 37px;
   }
@@ -1635,6 +1680,9 @@ body {
   }
 }
 @media (max-width: 354px) {
+  .header {
+    padding-bottom: 5px;
+  }
   .header-heading-h1 {
     left: -3vw;
     transform: scale(0.5);
