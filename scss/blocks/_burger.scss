@@ -24,3 +24,21 @@
 .burger__line:last-child {
     margin-bottom: 0px;
 }
+
+.burger-active > span:first-child {
+    transform: rotate(45deg);
+    transition: .5s;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 0;
+}
+.burger-active > span:nth-child(2){
+    display: none;
+}
+.burger-active > span:last-child {
+    transform: rotate(-45deg);
+    transition: .5s;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 0;
+}
