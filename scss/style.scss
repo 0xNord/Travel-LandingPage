@@ -257,7 +257,7 @@ body {
     margin: 0 auto;
     height: auto;
     background-color: #fff;
-
+    padding-top: 25px;
 }
 
 .beauties-heading-p {
@@ -292,6 +292,7 @@ body {
     position: relative;
     height: 620px;
     /* width: 351px; */
+    
 
 }
 
@@ -302,9 +303,11 @@ body {
 
 .card-info {
     position: absolute;
-    top: 55%;
-    /* right: 10%; */
     left: 0px;
+    background-color: #fff;
+    padding: 15px 5px;
+    top: 10px;
+    left: 15px;
 }
 
 .card-info-h3 {
@@ -769,8 +772,18 @@ body {
         left: 22%;
         top: 34%;
     }
+    
 }
-
+@media (max-width: 1572px){
+    .beauties-cards { margin-bottom: 25px; row-gap: 20px;}
+    .beauties-cards-card {
+        // height: 28vh;
+        // height: 375px;
+        height: fit-content;
+        & img { width: 390px; } //32
+    }
+    .rating { margin: 0 auto; }
+}
 @media (max-width: 1440px) {
     .header {
         padding-bottom: 90px;
@@ -819,8 +832,9 @@ body {
         margin-right: 0;
         margin-bottom: 25px;
     }
+    //beauties
+    .beauties-heading-h2 { margin-bottom: 80px; }
 }
-
 @media (max-width: 1260px) {
     // activities
     .activities-card { margin: 0 15px; }
@@ -830,18 +844,13 @@ body {
         align-items: center;
 
         &-card {
-            height: 380px;
+            & img { min-width: 32vw; }
+            // height: 380px;
         }
     }
-
-    .card-info {
-        top: 10%;
-        left: 20px;
-        background-color: #fff;
-        padding: 15px 5px;
-    }
-
     //form
+    //beauties
+    .beauties-heading-h2 { margin-bottom: 45px; }
     .beauties-form {
         justify-content: start;
         padding-left: 5px;
@@ -1155,7 +1164,7 @@ body {
     }
 
     .rating {
-        margin-left: 0;
+        // margin-left: 0;
     }
 
     // section 4 - partners-reviews

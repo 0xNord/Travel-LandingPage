@@ -886,6 +886,7 @@ body {
   margin: 0 auto;
   height: auto;
   background-color: #fff;
+  padding-top: 25px;
 }
 
 .beauties-heading-p {
@@ -927,9 +928,11 @@ body {
 
 .card-info {
   position: absolute;
-  top: 55%;
-  /* right: 10%; */
   left: 0px;
+  background-color: #fff;
+  padding: 15px 5px;
+  top: 10px;
+  left: 15px;
 }
 
 .card-info-h3 {
@@ -1375,6 +1378,22 @@ body {
     top: 34%;
   }
 }
+@media (max-width: 1572px) {
+  .beauties-cards {
+    margin-bottom: 25px;
+    row-gap: 20px;
+  }
+  .beauties-cards-card {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .beauties-cards-card img {
+    width: 390px;
+  }
+  .rating {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1440px) {
   .header {
     padding-bottom: 90px;
@@ -1417,6 +1436,9 @@ body {
     margin-right: 0;
     margin-bottom: 25px;
   }
+  .beauties-heading-h2 {
+    margin-bottom: 80px;
+  }
 }
 @media (max-width: 1260px) {
   .activities-card {
@@ -1426,14 +1448,11 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .beauties-cards-card {
-    height: 380px;
+  .beauties-cards-card img {
+    min-width: 32vw;
   }
-  .card-info {
-    top: 10%;
-    left: 20px;
-    background-color: #fff;
-    padding: 15px 5px;
+  .beauties-heading-h2 {
+    margin-bottom: 45px;
   }
   .beauties-form {
     justify-content: start;
@@ -1668,9 +1687,6 @@ body {
   .card-info {
     left: -2%;
     top: 0%;
-  }
-  .rating {
-    margin-left: 0;
   }
   .partners-reviews-heading-h2 {
     font-size: 34px;
